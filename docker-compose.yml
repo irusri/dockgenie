@@ -5,3 +5,5 @@ services:
     ports:
       - "80:80"
       - "3002:3006"
+    environment:
+      - "MYSQL_ADMIN_PASS=mypass"
