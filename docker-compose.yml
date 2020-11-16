@@ -1,0 +1,7 @@
+version: '3'
+services:
+  geniesys:
+    image: "mattrayner/lamp:build-189-1604"
+    ports:
+      - "80:80"
+      - "3002:3006"
