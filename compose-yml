@@ -1,0 +1,12 @@
+version: '3'
+services:
+  geniesys:
+    image: "mattrayner/lamp"
+    ports:
+      - "80:80"
+      - "3002:3006"
+    environment:
+      - "MYSQL_ADMIN_PASS=mypass"
+    volumes: 
+      - "${PWD}/geniesys:/app/geniesys"  
+      - "${PWD}/mysql:/var/lib/mysql"
