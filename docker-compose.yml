@@ -1,7 +1,7 @@
 version: '3'
 services:
   geniesys:
-    image: "mattrayner/lamp:build-189-1604"
+    image: "irusri/docker4geniesys:latest"
     ports:
       - "80:80"
       - "3002:3006"
@@ -10,3 +10,6 @@ services:
     volumes: 
       - "geniesys:/app/geniesys"
       - "mysql:/var/lib/mysql"
+volumes:
+  geniesys:
+  mysql:
